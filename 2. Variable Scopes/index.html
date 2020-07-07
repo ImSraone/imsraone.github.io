@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Variable Scopes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../site.css">
+    <script src="scopes.js"></script>
+    <script src="../site.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-sm-10">
+            <h1>Variable Scopes</h1>
+        </div>
+        <div class="col-sm-1 homeButton">
+            <a href="../index.html">
+                Goto Home
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="description">
+                <ul>
+                    <li>Var</li>
+                    <li>Let</li>
+                    <li>Const</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center">
+            <button onclick="ShowOrHide('WhyNotJS')" class="btn btn-danger">
+                <b>BIG Note</b></button>
+        </div>
+
+        <div id="WhyNotJS" class="row text-center WhyNot" style="display: none;">
+            <h3>By Default TSC will target ES3</h3>
+            <h3>We can also configure TSC to target specific version of JavaScript</h3>
+            <h3>If you dont target properly some of the features will <b class="specialWord">Not Work</b> even
+                though
+                TypeScript
+                says it as
+                feature.
+            </h3>
+        </div>
+    </div>
+
+</body>
+
+</html>
