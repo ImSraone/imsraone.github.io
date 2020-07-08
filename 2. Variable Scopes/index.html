@@ -39,14 +39,23 @@
                 <b>BIG Note</b></button>
         </div>
 
-        <div id="WhyNotJS" class="row text-center WhyNot" style="display: none;">
-            <h3>By Default TSC will target ES3</h3>
-            <h3>We can also configure TSC to target specific version of JavaScript</h3>
-            <h3>If you dont target properly some of the features will <b class="specialWord">Not Work</b> even
+        <div id="WhyNotJS" class="row WhyNot" style="display: none;">
+            <h3>1. TypeScript follows the same rules as JavaScript for variable declarations</h3>
+            <h3>2. By Default TSC will target ES3</h3>
+            <code>
+                tsconfig.json : 
+                    {
+                        "compilerOptions": {
+                            "target": "ES3",
+                            "outDir": "js",
+                            "rootDir": "../ts-srouce"
+                        }
+                    }
+            </code>
+            </code>
+            <h3>3. If you dont target properly some of the features will <b class="specialWord">Not Work</b> even
                 though
-                TypeScript
-                says it as
-                feature.
+                TypeScript supports.
             </h3>
         </div>
     </div>

@@ -4,6 +4,9 @@ let x: number = parseInt("20");
 console.log(x + 3);
 
 
+const clueless: any = "1";
+const clueNum: number = <number>clueless;
+
 // String 
 let courses = ["Angular", "React", "Express"];
 

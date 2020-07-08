@@ -4,10 +4,14 @@ var s2 = "all the power is with in you ,you can do anything and everything";
 var s3 = s1;
 var b1 = true;
 var b2 = false;
-var a1 = {
-    productId: 1,
-    productName: "Iphone",
-    productPrice: 1000
-};
-var array1 = ["AngularJS", "ReactJS", "NodeJS"];
+var a1 = 10;
+// Tuple
+var tupleExample = [10, "Sravan"];
 var array2 = [123, "AngularJS", true];
+// null and undefined
+var n = null;
+var u = undefined;
+// void
+var v1 = null;
+// Object
+var obj = { id: 1, name: "Troy" };

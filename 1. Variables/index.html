@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Variables</title>
+    <title>Data Types</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -10,12 +10,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../site.css">
     <script src="variables.js"></script>
+    <script src="../site.js"></script>
 </head>
 
 <body>
     <div class="row">
         <div class="col-sm-10">
-            <h1>Variables</h1>
+            <h1>Data Types</h1>
         </div>
         <div class="col-sm-1 homeButton">
             <a href="../index.html">
@@ -30,11 +31,33 @@
                     <li>Numbers</li>
                     <li>Strings</li>
                     <li>Boolean</li>
-                    <li>Any Type</li>
-                    <li>Homogenous Arrays</li>
-                    <li>Heterogenous Arrays</li>
+                    <li>Any</li>
+                    <li>Heterogenous Arrays / Tuple</li>
+                    <li>Void</li>
+                    <li>Null and Undefined</li>
+                    <li>Object</li>
+                    <br><br>
+                    <li><b class="specialWord"><a
+                                href="https://blog.logrocket.com/when-to-use-never-and-unknown-in-typescript-5e4d6c5799ad/"
+                                target="_blank"> Never </a></b>
+                    </li>
+                    <li><b class="specialWord"><a
+                                href="https://blog.logrocket.com/when-to-use-never-and-unknown-in-typescript-5e4d6c5799ad/"
+                                target="_blank"> Unknown </a></b>
+                    </li>
                 </ul>
             </div>
+        </div>
+
+        <div class="row text-center">
+            <button onclick="ShowOrHide('WhyNotJS')" class="btn btn-danger">
+                <b>BIG Note</b></button>
+        </div>
+
+        <div id="WhyNotJS" class="row text-center WhyNot" style="display: none;">
+            <h3>By default all types will accept <b class="specialWord">null</b> and <b
+                    class="specialWord">undefined</b> as values, no need to define them explicitly</h2>
+                <h3>When it comes to object we need to define nullable type using ? for each property</h2>
         </div>
     </div>
 

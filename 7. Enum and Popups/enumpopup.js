@@ -16,8 +16,9 @@ var WeekEnds;
 console.log(WeekEnds[6]);
 console.log(WeekEnds[7]);
 // Popup
-console.log("Hello");
-alert("Hello");
-confirm("Do you really want to do this?");
-var data = prompt("Please enter you name");
-console.log(data);
+function showAll() {
+    alert("Hello");
+    confirm("Do you really want to do this?");
+    var data = prompt("Please enter you name");
+    console.log(data);
+}
