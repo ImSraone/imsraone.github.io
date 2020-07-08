@@ -1,5 +1,7 @@
 // ------------------------------------------   Functions
 
+console.log("------------------------------------------   Functions");
+
 
 var hello = function (name: string): string {
     return "Hello " + name;
@@ -19,21 +21,22 @@ function calculator(): any {
 function display(id: number, name: string, role: string = "Normal") {
     console.log("Id", id);
     console.log("Name", name);
-    //if(role!=undefined){
-    console.log("Role", role);
-    // }
+    if (role != undefined) {
+        console.log("Role", role);
+    }
 }
 
-console.log(hello("Bharath"));
+console.log(hello("Sravan"));
 
-//console.log(hello("Bharath"));
-//console.log("Sum is: "+add(10,20));
-//display(1,"Bharath","Admin");
+console.log("Sum is: " + add(10, 20));
+display(1, "Sravan", "Admin");
 
-//console.log(calculator()(20,5));
+console.log(calculator()(20, 5));
 
 
 // ------------------------------------------  Function Overloading
+
+console.log("------------------------------------------   Functions Overloading");
 
 function doubleMe(x: number);
 function doubleMe(x: string);
@@ -44,11 +47,13 @@ function doubleMe(x: any) {
         console.log(x + " " + x);
     }
 }
-doubleMe("John");
-//doubleMe([1, 2, 3]);
+doubleMe("Sravan");
+doubleMe(99);
 
 
 // ------------------------------------------   Arrow Functions
+
+console.log("------------------------------------------  Arrow Functions");
 
 var hello = (name: string): string => {
     return "Hello " + name;
@@ -58,21 +63,13 @@ var multiply = (num1: number, num2: number): number => {
     return num1 * num2;
 }
 
-var myarray: Array<any> = [];
-
-for (var i = 0; i < 10; i++) {
-    myarray.push((): number => { return i });
-}
-
-for (var i = 0; i < 10; i++) {
-    console.log(myarray[i]());
-}
-
-//console.log(hello("Bharath"));
+console.log(hello("Sravan"));
 console.log("Product is", multiply(5, 8));
 
 
-// ------------------------------------------   Var Args
+// ------------------------------------------   Rest Params
+
+console.log("------------------------------------------  Rest Params");
 
 
 var product = function (x: number, y: number, ...nums: number[]) {

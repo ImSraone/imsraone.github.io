@@ -12,3 +12,8 @@ Topics that are covered as part of training are below.
 8. Enum and Popups
 9. Functions
 10. Classes
+11. Interfaces
+12. Inheritance
+13. Access Modifiers
+14. Encapsulation
+15. Modules
