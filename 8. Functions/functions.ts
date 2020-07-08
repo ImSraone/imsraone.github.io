@@ -45,7 +45,7 @@ function doubleMe(x: any) {
     }
 }
 doubleMe("John");
-doubleMe([1, 2, 3]);
+//doubleMe([1, 2, 3]);
 
 
 // ------------------------------------------   Arrow Functions
