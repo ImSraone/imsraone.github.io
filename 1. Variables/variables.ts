@@ -7,17 +7,28 @@ var s3: string = s1;
 var b1: boolean = true;
 var b2: boolean = false;
 
-var a1: any = {
-    productId: 1,
-    productName: "iPhone",
-    productPrice: 1000
-};
+var a1: any = 10;
 
-var array1: Array<string> = ["AngularJS", "ReactJS", "NodeJS"];
+// Tuple
+
+var tupleExample = [10, "Sravan"];
 
 var array2: Array<any> = [123, "AngularJS", true];
 
 
+// null and undefined
+
+var n: null = null;
+var u: undefined = undefined;
+
+// void
+
+var v1: void = null;
+
+
+// Object
+
+var obj: object = { id: 1, name: "Troy" };
 
 
 

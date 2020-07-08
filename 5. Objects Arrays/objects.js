@@ -25,3 +25,10 @@ var a = courses[0], b = courses[1], c = courses[2];
 console.log(a);
 console.log(b);
 console.log(c);
+// Object Destructuring
+var rect = { x: 0, y: 10, width: 15, height: 20 };
+var x = rect.x, y = rect.y, width = rect.width, height = rect.height;
+console.log(x, y, width, height); // 0,10,15,20
+// Array Destructuring
+var _a = [1, 2, 3, 4], x = _a[0], y = _a[1], remaining = _a.slice(2);
+console.log(x, y, remaining); // 1, 2, [3,4]
