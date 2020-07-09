@@ -1,5 +1,8 @@
+//Named export
 export let age: number = 20;
-export class Employee {
+
+//Default export
+export default class Employee {
   empCode: number;
   empName: string;
   constructor(name: string, code: number) {
@@ -16,4 +19,6 @@ export class Employee {
   }
 }
 
-let companyName: string = "XYZ";
+export const displayAlert = () => {
+  alert("Hi I am a function");
+};

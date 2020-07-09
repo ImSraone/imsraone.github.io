@@ -1,7 +1,9 @@
 define(["require", "exports"], function (require, exports) {
     "use strict";
     exports.__esModule = true;
+    //Named export
     exports.age = 20;
+    //Default export
     var Employee = /** @class */ (function () {
         function Employee(name, code) {
             this.empName = name;
@@ -14,6 +16,8 @@ define(["require", "exports"], function (require, exports) {
         };
         return Employee;
     }());
-    exports.Employee = Employee;
-    var companyName = "XYZ";
+    exports["default"] = Employee;
+    exports.displayAlert = function () {
+        alert("Hi I am a function");
+    };
 });

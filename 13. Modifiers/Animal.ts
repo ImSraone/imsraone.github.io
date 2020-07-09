@@ -12,4 +12,5 @@ class Animal {
 }
 
 const animal = new Animal("Dog", "Blr");
+
 console.log(animal.name);
