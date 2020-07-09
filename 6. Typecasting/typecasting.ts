@@ -7,6 +7,12 @@ console.log(x + 3);
 const clueless: any = "1";
 const clueNum: number = <number>clueless;
 
+let s2: string = "Hi";
+
+let u: unknown = 1;
+
+s2 = <string>u;
+
 // String 
 let courses = ["Angular", "React", "Express"];
 
