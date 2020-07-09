@@ -28,8 +28,17 @@ switch (x) {
         console.log("Default");
 }
 // While
-var n = 10;
+var num = 10;
 var i = 1;
-while (i <= n) {
+while (i <= num) {
     console.log(i++);
+}
+// For in and For of
+var list = [4, 5, 6];
+for (var i_1 in list) {
+    console.log(i_1); // "0", "1", "2",
+}
+for (var _i = 0, list_1 = list; _i < list_1.length; _i++) {
+    var i_2 = list_1[_i];
+    console.log(i_2); // "4", "5", "6"
 }
