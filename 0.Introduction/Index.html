@@ -27,7 +27,7 @@
         <div class="row">
             <div class="description">
                 <ul>
-                    <li>Sits as a layer on-top of JavaScript</li>
+                    <li>TS installation</li>
                     <code class="col-sm-12">
                             TypeScript Installation : <br><br>
                                 npm install typescript
@@ -39,14 +39,17 @@
                     <code class="col-sm-12">
                             TypeScript Compiler :
                                 <br><br>
-                                tsc
+                                <a onclick="ShowOrHide('TSC')">tsc</a>
                     </code>
                     <code class="col-sm-12 javascript-class">
                             JavaScript Code: <br><br>
                                 var n1 = 10;
                     </code>
+                    <div id="TSC" class="row text-center WhyNot" style="display: none;">
+                        <img src="../resources/TSC.png">
+                    </div><br>
                     <li>Compiles to Whatever Version of JavaScript You Want</li>
-                    <li>Enables JavaScript to Scale</li>
+                    <li>Enables JavaScript to Scale for Enterprise Applications</li>
                     <li>Complete Tooling Experience</li>
                     <li>Modern Language Features</li>
                     <li>Battle-Tested</li>
@@ -56,14 +59,27 @@
         </div>
 
         <div class="row text-center">
-            <button onclick="ShowOrHide('WhyNotJS')" class="btn btn-danger">
+            <button onclick="ShowOrHide('WhyNotJS');" class="btn btn-danger">
                 <b>BIG Note</b></button>
         </div>
 
         <div id="WhyNotJS" class="row text-center WhyNot" style="display: none;">
             <h3>Did you mean TypeScript is Better than JavaScript ?</h2>
-                <img src="WhyNotJavaScript.jpg">
+                <img onclick="ShowOrHide('WhyNotJS');ShowOrHide('YesJS');" src="WhyNotJavaScript.jpg">
         </div>
+
+        <div id="YesJS" class="row text-center WhyNot" style="display: none;">
+            <h3> It is a superset of JavaScript that compiles into simple JavaScript.</h2>
+                <div class="col-sm-12"><img src="../resources/typscriptimage.png"></div>
+                <br><br>
+                <button style="margin-top: 40px;" onclick="ShowOrHide('diff');" class="btn btn-danger">
+                    <b>Example </b></button>
+        </div>
+
+        <div id="diff" class="row text-center WhyNot" style="display: none;">
+            <img src="../resources/tsvsjs.JPG">
+        </div>
+
     </div>
 
 </body>
