@@ -1,5 +1,6 @@
 var Passenger = /** @class */ (function () {
     function Passenger(firstName, lastName, frequentFlyerNo) {
+        this.maxHieghtInFet = 6;
         this.firstName = firstName;
         this.lastName = lastName;
         this.frequentFlyerNo = frequentFlyerNo;
