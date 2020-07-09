@@ -15,3 +15,8 @@ var u = undefined;
 var v1 = null;
 // Object
 var obj = { id: 1, name: "Troy" };
+// declare variable which can accepts two or more types of data
+var twoTypeData;
+twoTypeData = 3;
+twoTypeData = "Troy";
+//twoTypeData = false;

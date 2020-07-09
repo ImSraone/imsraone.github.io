@@ -31,6 +31,16 @@ var v1: void = null;
 var obj: object = { id: 1, name: "Troy" };
 
 
+// declare variable which can accepts two or more types of data
+
+let twoTypeData: number | string;
+
+twoTypeData = 3;
+twoTypeData = "Troy";
+
+//twoTypeData = false;
+
+
 
 
 
