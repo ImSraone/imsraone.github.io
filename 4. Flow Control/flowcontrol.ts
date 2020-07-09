@@ -32,9 +32,22 @@ switch (x) {
 
 // While
 
-var n: number = 10;
+var num: number = 10;
 var i = 1;
 
-while (i <= n) {
+while (i <= num) {
     console.log(i++);
+}
+
+
+// For in and For of
+
+let list = [4, 5, 6];
+
+for (let i in list) {
+    console.log(i); // "0", "1", "2",
+}
+
+for (let i of list) {
+    console.log(i); // "4", "5", "6"
 }
